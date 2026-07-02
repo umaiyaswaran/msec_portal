@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MSEC — Meenakshi Sundararajan Engineering College</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== LOADER ===== -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <div class="loader-ring"></div>
+      <div class="loader-ring"></div>
+      <span class="loader-text">MSEC</span>
+    </div>
+  </div>
+
+  <!-- ===== PARTICLE CANVAS ===== -->
+  <canvas id="particles"></canvas>
+
+  <!-- ===== FLOATING SHAPES ===== -->
+  <div class="floating-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+    <div class="shape shape-4"></div>
+    <div class="shape shape-5"></div>
+    <div class="shape shape-6"></div>
+  </div>
+
+  <!-- ===== HEADER ===== -->
+  <header id="header">
+    <div class="header-inner">
+      <div class="header-logo">
+        <img src="logo.jpeg" alt="MSEC Logo" />
+      </div>
+      <div class="header-title">
+        <h1>MEENAKSHI SUNDARARAJAN ENGINEERING COLLEGE</h1>
+        <p>Autonomous Institution | Affiliated to Anna University | Chennai</p>
+      </div>
+      <nav class="header-nav">
+        <a href="#home">Home</a>
+        <a href="#portals">Portals</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== MOBILE NAV ===== -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#home">Home</a>
+    <a href="#portals">Portals</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <img src="bg.jpeg" alt="Background" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content reveal">
+      <div class="hero-badge">Welcome to the Future of Learning</div>
+      <h1>Welcome to <span class="gradient-text">MSEC</span> Portal</h1>
+      <p>Access all important college services in one place — academics, leave management, and hall booking.</p>
+      <a href="#portals" class="btn-glow">
+        <span>Explore Portals</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ===== PORTALS ===== -->
+  <section id="portals" class="portals">
+    <div class="section-header reveal">
+      <span class="section-tag">Our Portals</span>
+      <h2>Student <span class="gradient-text">Portals</span></h2>
+      <p>Powerful digital platforms designed to simplify your academic journey</p>
+    </div>
+    <div class="portal-grid">
+
+      <!-- Card 1 -->
+      <div class="portal-card reveal" data-portal="academics">
+        <div class="card-glow"></div>
+        <div class="card-image">
+          <img src="bg.jpeg" alt="MSEC Academics" />
+          <div class="card-image-overlay"></div>
+          <span class="card-badge">Academics</span>
+        </div>
+        <div class="card-body">
+          <h3>MSEC Academics</h3>
+          <p>Manage academic records, attendance, marks, timetable, and student-related academic activities.</p>
+          <a href="https://msec-academics.vercel.app/login" class="btn-card" target="_blank" rel="noopener">
+            Go to Website
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="portal-card reveal" data-portal="leave">
+        <div class="card-glow"></div>
+        <div class="card-image">
+          <img src="bg.jpeg" alt="MSEC Leave Portal" />
+          <div class="card-image-overlay"></div>
+          <span class="card-badge">Leave & Late</span>
+        </div>
+        <div class="card-body">
+          <h3>MSEC Leave Late Portal</h3>
+          <p>Submit leave requests, late entry requests, and track approval status digitally.</p>
+          <a href="https://msec-academics.vercel.app/login" class="btn-card" target="_blank" rel="noopener">
+            Go to Website
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="portal-card reveal" data-portal="hall">
+        <div class="card-glow"></div>
+        <div class="card-image">
+          <img src="bg.jpeg" alt="MSEC Hall Booking" />
+          <div class="card-image-overlay"></div>
+          <span class="card-badge">Hall Booking</span>
+        </div>
+        <div class="card-body">
+          <h3>MSEC Hall Booking</h3>
+          <p>Book seminar halls, classrooms, and event spaces easily through the hall booking portal.</p>
+          <a href="https://msec-connect.vercel.app/" class="btn-card" target="_blank" rel="noopener">
+            Go to Website
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="about">
+    <div class="about-inner">
+      <div class="about-text reveal">
+        <span class="section-tag">About Us</span>
+        <h2>About <span class="gradient-text">MSEC</span></h2>
+        <p>Meenakshi Sundararajan Engineering College (MSEC), Chennai, is committed to excellence in engineering education, innovation, and student development. The institution provides advanced infrastructure and digital systems to improve student experience.</p>
+        <p>With a strong focus on research, industry collaboration, and holistic development, MSEC continues to shape future leaders in technology and engineering.</p>
+      </div>
+      <div class="about-counters reveal">
+        <div class="counter-box">
+          <div class="counter-ring">
+            <svg viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="45" class="ring-bg"/>
+              <circle cx="50" cy="50" r="45" class="ring-fill"/>
+            </svg>
+          </div>
+          <span class="counter-number" data-target="1500">0</span>
+          <span class="counter-label">Students</span>
+        </div>
+        <div class="counter-box">
+          <div class="counter-ring">
+            <svg viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="45" class="ring-bg"/>
+              <circle cx="50" cy="50" r="45" class="ring-fill"/>
+            </svg>
+          </div>
+          <span class="counter-number" data-target="120">0</span>
+          <span class="counter-label">Faculty</span>
+        </div>
+        <div class="counter-box">
+          <div class="counter-ring">
+            <svg viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="45" class="ring-bg"/>
+              <circle cx="50" cy="50" r="45" class="ring-fill"/>
+            </svg>
+          </div>
+          <span class="counter-number" data-target="10">0</span>
+          <span class="counter-label">Departments</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="contact">
+    <div class="footer-glow-border"></div>
+    <div class="footer-inner">
+      <div class="footer-col footer-brand">
+        <img src="logo.jpeg" alt="MSEC Logo" class="footer-logo" />
+        <h3>Meenakshi Sundararajan Engineering College</h3>
+        <p>Autonomous Institution | Affiliated to Anna University | Chennai</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#portals">Portals</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Our Address</h4>
+        <p>363, Arcot Road, Puliur 1st Main Rd, Subedar Colony, Kodambakkam, Chennai, Tamil Nadu 600024</p>
+      </div>
+      <div class="footer-col">
+        <h4>Email Address</h4>
+        <p>Admission Email: admission@msec.edu.in</p>
+        <p>principal@msec.edu.in</p>
+      </div>
+      <div class="footer-col">
+        <h4>Phone Number</h4>
+        <p>097908 21869</p>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5 0-.28-.03-.56-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#0a0e27"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Meenakshi Sundararajan Engineering College. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===== MODAL ===== -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div class="modal-image">
+        <img src="bg.jpeg" alt="Portal" id="modalImg" />
+        <div class="modal-image-overlay"></div>
+        <span class="modal-badge" id="modalBadge"></span>
+      </div>
+      <div class="modal-body">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <a href="#" id="modalLink" class="btn-glow" target="_blank" rel="noopener">
+          <span>Go to Website</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
